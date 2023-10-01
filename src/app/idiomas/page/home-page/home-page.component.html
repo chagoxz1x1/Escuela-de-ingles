@@ -1,12 +1,12 @@
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-  <div class="container">
+  <div class="container-fluid">
     <a href="#" class="navbar-brand">NavBar</a>
     <!-- Boton para el menu -->
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collpase"
+      data-bs-toggle="collapse"
       data-bs-target="#menu"
       aria-controls="menu"
       aria-expanded="false"
@@ -14,9 +14,9 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collpase navbar-collapse" id="menu">
+    <div class="collapse navbar-collapse" id="menu">
 
-      <ul class="navbar-nav me-auto mb-2" >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
         <img src="" alt="">
 
         <li class="nav-item"> <a href="#" class="nav-link">Curso</a></li>
@@ -24,9 +24,9 @@
 
         <li class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-        role="button" aria-expanded="false">Idiomas</a>
+        role="button" aria-expanded="false" id="dropdown-menu">Idiomas</a>
 
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
             <li><a href="#" class="dropdown-item">Aleman</a></li>
             <li><a href="#" class="dropdown-item">Japones</a></li>
             <li><a href="#" class="dropdown-item">Coreano</a></li>
@@ -52,15 +52,31 @@
           <!-- caja de dialogo -->
           <div class="modal-dialog">
             <!-- contenido -->
-            <div class="modal-content">
+            <div class="modal-content ">
               <!-- Encabezado de la caja -->
-              <div class="modal-header">
+              <div class="modal-header  " >
                 <h5 class="modal-title">Inicio de sesion</h5>
                 <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
               </div>
               <!-- cuerpo de la caja -->
-              <div class="modal-body">
-                <h1>hola mundo</h1>
+              <div class="modal-body justify-content-center">
+                <form action="">
+
+                  <div class="col mb-3">
+                    <label for="correo" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="correo" required>
+                  </div>
+
+                  <div class="col mb-3">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="contraseña" required>
+                  </div>
+
+                  <div class="col d-flex justify-content-center align-items-center" >
+                    <button type="submit" class="btn btn-primary">Iniciar secion</button>
+                  </div>
+
+                </form>
               </div>
             </div>
           </div>

@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center min-vh-100">
+    <div class="col-md-6">
+      <form (ngSubmit)="submitForm()" class="border p-4 rounded text-center">
+        <h2 class="mb-4">Iniciar Sesión</h2>
+        <div class="form-group mb-4">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" [(ngModel)]="email" name="email" required>
+          <div class="text-danger">{{ emailError }}</div> <!-- Mostrar mensaje de error -->
+        </div>
+        <div class="form-group mb-4">
+          <label for="password">Contraseña</label>
+          <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" [(ngModel)]="password" name="password" required>
+          <div class="text-danger">{{ passwordError }}</div> <!-- Mostrar mensaje de error -->
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+        <div>
+          <a href="" routerLink='/Registro' routerLinkActive="router-link-active">Crear cuenta</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
