@@ -1,0 +1,12 @@
+<div class="container">
+    <div id="button-container" *ngIf="!mostrarContenido">
+      <button (click)="mostrarNombre(nombre)" *ngFor="let nombre of nombresAleatorios">
+        Nombre {{ nombre }}
+      </button>
+    </div>
+    <div id="result" *ngIf="mostrarContenido">
+      <button (click)="ocultarContenido()">Ocultar contenido</button>
+      {{ resultado }}
+    </div>
+  </div>
+  

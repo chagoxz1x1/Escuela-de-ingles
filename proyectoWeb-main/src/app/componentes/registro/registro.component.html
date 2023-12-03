@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/811311a899.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+  <body>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    
+    <form (ngSubmit)="register()">
+      <h3>REGISTER</h3>
+      
+      <label for="username">Username</label>
+      <input type="text" placeholder="Username" id="username" [(ngModel)]="username" required>
+
+      <label for="email">Email</label>
+      <input type="text" placeholder="Email" id="email" [(ngModel)]="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" placeholder="Password" id="password" [(ngModel)]="password" required>
+
+      <div *ngIf="passwordError" class="error">{{ passwordError }}</div>
+      
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
+
+
+
+
+
