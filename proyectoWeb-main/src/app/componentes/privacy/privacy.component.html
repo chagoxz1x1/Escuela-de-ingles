@@ -1,12 +1,12 @@
 
 
 <body>
-    
+
     <div  class="privado" style="margin-bottom: 2%; "  >
         <div data-aos="zoom-in">
         <h1 style="color: brown;">AVISO DE PRIVACIDAD</h1>
         <p>Aviso de privacidad integral</p>
-        <p>Emmanuel Salas mejor conocido como Ingeni-Tec, con domicilio en Blvd. Juan Pablo II No. 1302 Ex hacienda la Cantera, 20200 Aguascalientes, Ags. y portal de internet http://localhost:4200/, 
+        <p>Santiago Saucedo mejor conocido como Ingeni-Tec, con domicilio en Blvd. Juan Pablo II No. 1302 Ex hacienda la Cantera, 20200 Aguascalientes, Ags. y portal de internet http://localhost:4200/, 
         es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:</p>
         <p>¿Para qué fines utilizaremos sus datos personales?</p>
         <p>Los datos personales que recabamos de usted, los utilizaremos para
@@ -30,7 +30,7 @@
         considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al
          uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO.</p>
         <p>Para el ejercicio de cualquiera de los derechos ARCO, debe enviar una petición vía correo electrónico 
-            a emmanuel.salasits@gmail.com y deberá contener:</p>
+            a chagoxz1x1@gmail.com y deberá contener:</p>
         
             <ol>
                 <li>Nombre completo del titular.</li>
@@ -86,8 +86,20 @@
     <span class="btn" >descargar  </span>
     
     </a>
-
+    
     </div>
+    <div>
+        <label>
+          <input type="checkbox" [(ngModel)]="aceptoTerminos" (change)="onCheckboxChange()">
+          Acepto los términos y condiciones
+        </label>
+      </div>
+      
+      <button routerLink="/registro" class="btn2" [disabled]="!botonHabilitado">ACEPTO</button>
+      <div>
+        <button class="btn2" routerLink="/login" >DENEGAR</button>
+      </div>
+
 </div>
     </div>
 

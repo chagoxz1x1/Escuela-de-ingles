@@ -22,7 +22,6 @@ const routes: Routes = [
     children: [
       // { path: '', component: HomeComponent },
       { path: 'home', component: HomeComponent },
-      { path: 'PYP', component: PrivacyComponent },
       { path: 'random-names', component: RandomNamesComponent },
       // { path: 'login', component: LoginComponent},
       { path: 'team', component: TeamComponent },
@@ -42,9 +41,14 @@ const routes: Routes = [
     component: RegistroComponent,
   },
   {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
     path: '',
     component: LoginComponent,
   },
+  { path: 'PYP', component: PrivacyComponent },
   // { path: 'about', component: AboutComponent },
   // { path: 'contact', component: ContactComponent },
   // { path: '**', component: FooterComponent }

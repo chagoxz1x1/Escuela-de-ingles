@@ -32,6 +32,40 @@ background-attachment: fixed;
     border-bottom-left-radius: 10px;
     transition: all 1s;
 }
+.btn2 {
+    cursor: pointer;
+    right: 0%;
+    position: relative;
+    padding: 10px 20px;
+    background: #0e52d0;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 4%;
+    border-top-right-radius: 10px;
+    border-color: #3e8e41;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+  }
+  
+  /* Estilo para el estado deshabilitado */
+  .btn2:disabled {
+    background: #a0a0a0; /* Puedes cambiar el color a tu preferencia */
+    cursor: not-allowed;
+  }
+  
+  /* Estilos para las pseudoclases :before y :after */
+  .btn2:after,
+  .btn2:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+  }
+  
+
+
 .btn:after, .btn:before {
     content: " ";
     width: 10px;

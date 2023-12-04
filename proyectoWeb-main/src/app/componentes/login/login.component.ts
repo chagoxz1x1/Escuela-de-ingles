@@ -14,10 +14,6 @@ import { AngularFireDatabase, AngularFireList } from '@angular/fire/compat/datab
 export class LoginComponent {
 
 
-  constructor(
-   
-  ) {}
-
  
 }
 
